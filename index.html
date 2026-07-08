@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title> AI-Prompt-Optimizer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Optimizer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>AI Prompt Optimizer</h1>
 
-    <textarea id="input"    placeholder="Enter your prompt"></textarea>
+  <h1>AI Prompt Optimizer</h1>
 
-    <select id="category">
-        <option>Email</option>
-        <option>Business</option>
-        <option>Marketing</option>
-        <option>Sales</option>
-    </select>
+  <textarea
+    id="input"
+    placeholder="Enter your prompt here..."></textarea>
+
+  <br><br>
+
+  <select id="category">
+    <option>Email</option>
+    <option>Coding</option>
+    <option>Marketing</option>
+    <option>Resume</option>
+    <option>General</option>
+  </select>
+
+  <br><br>
+
+  <button onclick="optimizePrompt()">
+    Optimize Prompt
+  </button>
+
+  <h3>Optimized Prompt</h3>
+
+  <p id="output"></p>
+
+  <script src="script.js"></script>
 
 </body>
+
+</html>
